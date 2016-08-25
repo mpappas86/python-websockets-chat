@@ -1,12 +1,5 @@
 # -*- coding: utf-8 -*-
 
-"""
-Chat Server
-===========
-
-This simple application uses WebSockets to run a primitive chat server.
-"""
-
 import os
 import logging
 import gevent
@@ -20,4 +13,4 @@ def hello():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5000)
